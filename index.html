@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Telegram 3D Plane Game</title>
+  <!--
+    This simple HTML5 game demonstrates a 3D flight experience using Three.js.
+    It is designed to be embedded as a Telegram mini‑game.  The game logic lives
+    in `script.js` and renders a plane flying through a stylised landscape.
+  -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Container for the WebGL renderer.  The canvas created by Three.js will
+       fill the entire viewport.  -->
+  <div id="gameContainer"></div>
+  <!-- Simple on‑screen instructions.  Feel free to localise this text for
+       other languages or change the control scheme. -->
+  <div id="instructions">
+    Управляйте самолётом с помощью стрелок или клавиш W/A/S/D.  Наберите
+    максимальную высоту и избегайте столкновений с землёй!
+  </div>
+  <!-- Three.js library from a CDN.  The version is pinned for reproducibility. -->
+  <script src="https://unpkg.com/three@0.152.2/build/three.min.js"></script>
+  <!-- The main game script.  Separating the code keeps the HTML clean. -->
+  <script src="script.js"></script>
+</body>
+</html>
